@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container mt-5">
+    <h2>Importar Matriz de Estudiantes desde Excel</h2>
+    <p class="text-muted">Sube el archivo .xlsx con el listado actual de la institución.</p>
+    
+    <form action="/importar" method="POST" enctype="multipart/form-data" class="card p-4 shadow-sm">
+        <div class="mb-3">
+            <label for="archivo_excel" class="form-label">Seleccionar archivo Excel (.xlsx)</label>
+            <input class="form-control" type="file" id="archivo_excel" name="archivo_excel" accept=".xlsx" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Subir e Importar Datos</button>
+    </form>
+</div>
+  </body>
+</html>
